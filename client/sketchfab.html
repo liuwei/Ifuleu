@@ -1,0 +1,30 @@
+<head>
+    <title>Leaderboard</title>
+
+</head>
+
+<body>
+<div id="outer">
+    {{> leaderboard}}
+</div>
+
+<div id="progress">
+    <span id="message">Loading ...</span>
+</div>
+
+</body>
+
+<template name="leaderboard">
+    <div class="aaa"></div>
+    <div class="leaderboard">
+        {{#each geometries}}
+        {{> geometry}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="geometry">
+    <div class="object {{selected}}">
+        <span class="name">{{name}}</span>
+    </div>
+</template>
