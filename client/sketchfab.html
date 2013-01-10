@@ -4,23 +4,20 @@
 </head>
 
 <body>
-<div id="outer">
+    <div id="progress">
+        <span id="message">Please select a model:</span>
+    </div>
     {{> leaderboard}}
-</div>
-
-<div id="progress">
-    <span id="message">Loading ...</span>
-</div>
-
 </body>
 
 <template name="leaderboard">
-    <div class="aaa"></div>
+
     <div class="leaderboard">
         {{#each geometries}}
         {{> geometry}}
         {{/each}}
     </div>
+    <div class="model"></div>
 </template>
 
 <template name="geometry">

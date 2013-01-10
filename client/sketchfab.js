@@ -5,7 +5,7 @@ Template.leaderboard.geometries = function () {
 Template.leaderboard.rendered = function () {
 
     var self = this;
-    container = self.firstNode;
+    container = self.find(".model");
     container.appendChild( renderer.domElement );
 
 }
@@ -31,7 +31,7 @@ Template.geometry.events({
             "geometry" : geometry.name,
             "position" : [ 0, -25, 0 ],
             "rotation" : [ 0, 0, 0 ],
-            "scale"	   : [ 14, 14, 14 ],
+            "scale"	   : [ geometry.scale, geometry.scale, geometry.scale ],
             "visible"  : true
         };
         json1.objects["light1"] = {

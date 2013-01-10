@@ -4,11 +4,13 @@ Meteor.startup(function () {
             {
                 "name" : "knight",
                 "type": "ascii",
+                "scale": "5",
                 "url" : "https://www.filepicker.io/api/file/wEEjVqZrQ2ebYrpCVPn2"
             },
             {
                 "name" : "sittingBox",
                 "type": "ascii",
+                "scale": "50",
                 "url" : "https://www.filepicker.io/api/file/BqEyrqKtQc25GZDOc2Yq"
             }
     ];
